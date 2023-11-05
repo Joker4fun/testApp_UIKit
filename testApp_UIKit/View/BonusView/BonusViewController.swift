@@ -40,6 +40,7 @@ class BonusViewController: UIViewController {
     
     private lazy var searchBar: UITextField = {
         let textBar = UITextField()
+        textBar.placeholder = "Search"
         textBar.borderStyle = .roundedRect
         textBar.leftViewMode = UITextField.ViewMode.always
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))

@@ -19,7 +19,6 @@ class Contacts: ContactsProtocol {
     private let store = CNContactStore()
     private var emptyModel:[ContactsModel] = []
     
-    
     func makeContact(_ contact: CNContact) -> ContactsModel {
         var newContact = ContactsModel()
         newContact.firstName = contact.givenName

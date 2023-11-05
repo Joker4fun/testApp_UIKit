@@ -17,6 +17,7 @@ class SearchViewController: UIViewController {
     
     let searchBar: UITextField = {
         let textBar = UITextField()
+        textBar.placeholder = "Search"
         textBar.borderStyle = .roundedRect
         textBar.leftViewMode = UITextField.ViewMode.always
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
@@ -41,7 +42,7 @@ class SearchViewController: UIViewController {
     }()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
         overrideUserInterfaceStyle = .light
         setBindings()
         presenter.makeContactExample("")
